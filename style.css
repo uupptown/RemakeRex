@@ -68,7 +68,7 @@ body {
    width: 100%;
    position: relative;
    background: url('images/intro_img.jpg') no-repeat center center/cover;
-   height: 800px;
+   height: 820px;
 }
 
 .showcase-top {
@@ -107,7 +107,7 @@ body {
    margin-top: 190px;
    align-items: center;
    text-align: end;
-   width: 40%;
+   width: 45%;
 }
 
 .showcase-content p {
@@ -267,5 +267,43 @@ body {
    }
    .bang-content {
       height: 300px;
+   }
+}
+
+/* -------------------------- */
+/* BANG BANG */
+
+.heading {
+   display: flex;
+   align-items: center;
+}
+
+.heading-text {
+   color: #000;
+   margin-left: 50px;
+   flex: 0 1 70%;
+   max-width: 50%;
+}
+
+.heading-title, p {
+   margin-bottom: 15px;
+}
+
+.heading__photo {
+   flex: 0 1 30%;
+}
+
+.heading__photo img {
+   width: 100%;
+}
+
+.heading-title {
+   font-size: 16px;
+   color: #d54c63;
+}
+
+@media (max-width: 800px) {
+   .heading-text p {
+      font-size: 8px;
    }
 }
