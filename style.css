@@ -447,3 +447,59 @@ body {
       margin-right: 80px;
    }
 }
+
+/* -------------------------- */
+/* GET */
+
+.get {
+   background-color: #d54c63;
+}
+
+.get-text {
+   width: 30%;
+}
+
+.get-title {
+   text-transform: uppercase;
+   padding: 30px 0px 15px 0px;
+}
+
+.get-subtitle {
+   padding-bottom: 15px;
+}
+
+.mail {
+   color: #fff;
+}
+
+.mail:hover {
+   color:#6b1068;
+}
+
+.get-mail {
+   padding-bottom: 30px;
+}
+
+@media (max-width: 450px) {
+   .get-text {
+      width: 80%;
+   }
+}
+
+/* -------------------------- */
+/* FOOTER */
+
+.footer {
+   background-color: #2e3b4e;
+}
+
+.footer-text {
+   padding: 30px 0px 30px 0px ;
+}
+
+@media (max-width: 450px) {
+   .footer-text {
+      width:80%;
+      font-size: 10px;
+   }
+}
