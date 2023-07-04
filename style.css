@@ -1,0 +1,175 @@
+/* Скидання параметрів */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+* {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+
+body {
+    font-size: 12px;
+    color: #fff;
+}
+
+/* -------------------------- */
+
+.wrapper {
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   min-height:100%;
+}
+
+/* -------------------------- */
+
+[class*="__container"] {
+   max-width: 1200px;
+   margin: 0px auto;
+   padding: 0 15px;
+}
+
+/* -------------------------- */
+/* HEADER */
+
+.showcase {
+   width: 100%;
+   position: relative;
+   background: url('images/intro_img.jpg') no-repeat center center/cover;
+   height: 800px;
+}
+
+.showcase-top {
+   height: 60px;
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+}
+
+.header__logo {
+   display: flex;
+}
+
+.header-logo__text {
+   margin-left: 10px;
+}
+
+.menu__list {
+   display: flex;
+   position: relative;
+   gap: 25px;
+}
+
+.menu__link {
+   font-size: 12px;
+   line-height: 22px;
+   color: #FFFFFF;
+}
+
+.menu__link:hover {
+   text-decoration: underline;
+   color: #4285F4;
+}
+
+.showcase-content {
+   margin-top: 190px;
+   align-items: center;
+   text-align: end;
+   width: 40%;
+}
+
+.showcase-content p {
+   font-size: 50px;
+   margin-bottom: 50px;
+}
+
+.button {
+   position: relative;
+   z-index: 2;
+   text-transform: uppercase;
+   font-size: 12px;
+   line-height: 1.2;
+   letter-spacing: 1px;
+   color: #fcfdfe;
+   padding: 25px 60px ;
+   border-radius: 15px;
+   background-color: #8824cd;
+   transition: background-color 0.3s ease 0s;
+ }
+ 
+
+.btn_text {
+   line-height: 60px; 
+   color: #fff;
+}
+
+.button:hover {
+   background-color: #4285F4;
+}
+
+@media (max-width: 710px) {
+   .showcase {
+      height: 450px;
+   }
+   .showcase-content {
+      width: 55%;
+   }
+   .showcase-content p {
+      margin-top: -80px;
+      font-size: 30px;
+   }
+   .button {
+      padding: 15px 20px ;
+   }
+   .showcase-top {
+      flex-direction: column;
+   }
+}
+
+@media (max-width: 450px) {
+   .showcase {
+      height: 450px;
+   }
+   .showcase-content {
+      width: 100%;
+      text-align: center;
+   }
+   .menu__list {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* -------------------------- */
