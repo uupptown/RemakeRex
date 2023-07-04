@@ -125,7 +125,7 @@ body {
    border-radius: 30px;
    background-color: #8824cd;
    transition: background-color 0.3s ease 0s;
- }
+}
 
 .button:hover {
    background-color: #6b1068;
@@ -192,6 +192,9 @@ body {
    
 }
 
+.information-about-subtitle {
+   width: 85%;
+}
 
 @media (max-width: 450px) {
    .information-about-container {
@@ -203,9 +206,12 @@ body {
      flex-direction: column;
      margin-bottom: 30px;
      gap: 20px;
-     width: 60%;
+     width: 80%;
      margin-left: auto;
      margin-right: auto;
+   }
+   .information-about-subtitle {
+      margin-left: 20px;
    }
 }
 
@@ -305,7 +311,7 @@ body {
 }
 
 /* -------------------------- */
-/* EXPIRIENCE */
+/* EXPERIENCE */
 
 .experience-content {
    height: 500px;
@@ -340,5 +346,57 @@ body {
 @media (max-width: 450px) {
    .experience-content__subtitle {
       font-size: 10px;
+   }
+}
+
+/* -------------------------- */
+/* PHOTOGRAPHY */
+
+.photography {
+   background: url('../NewRex/images/photography.jpg') no-repeat center center/cover;
+   height: 700px;
+}
+
+.photography-button {
+   padding-top: 500px;
+   margin-bottom: 40px;
+}
+
+.photography-text {
+   font-size: 36px;
+   width: 50%;
+}
+
+.phot-button {
+   font-size: 10px;
+   padding: 15px 30px ;
+   border: 1px solid #fff;
+   border-radius: 30px;
+   background-color: none;
+   color:#FFFFFF;
+}
+
+.phot-button:hover {
+   border: 1px solid #6b1068;
+   color: #6b1068;
+}
+
+@media (max-width: 710px) {
+   .photography-button {
+      padding-top: 100px;
+   }
+   .photography-text {
+      font-size: 36px;
+      width: 100%;
+   }
+}
+
+@media (max-width: 450px) {
+   .photography {
+      background: url('../NewRex/images/photography.jpg') no-repeat center center/cover;
+      height: 400px;
+   }
+   .photography-text {
+      font-size: 24px;
    }
 }
