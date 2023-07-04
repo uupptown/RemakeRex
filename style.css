@@ -400,3 +400,50 @@ body {
       font-size: 24px;
    }
 }
+
+/* -------------------------- */
+/* HERE */
+
+.here {
+   display: flex;
+   align-items: center;
+   justify-content: end;
+}
+
+.here-text {
+   color: #000;
+   margin-right: 160px;
+   flex: 0 1 70%;
+   max-width: 45%;
+}
+
+.here-title, p {
+   margin-bottom: 15px;
+   letter-spacing: 0.4px;
+   line-height: 1.2;
+}
+
+.here__photo {
+   flex: 0 1 30%;
+}
+
+.here__photo img {
+   width: 100%;
+}
+
+.here-title {
+   font-size: 16px;
+   color: #d54c63;
+}
+
+@media (max-width: 800px) {
+   .here-text p {
+      font-size: 8px;
+   }
+}
+
+@media (max-width: 710px) {
+   .here-text {
+      margin-right: 80px;
+   }
+}
