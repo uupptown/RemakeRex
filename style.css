@@ -175,8 +175,9 @@ body {
 
 /* -------------------------- */
 
-.main {
+.information-about-us {
    background-color: #2e3b4e;
+   padding-bottom: 50px;
 }
 
 .information-about-container {
@@ -211,4 +212,6 @@ body {
      margin-left: auto;
      margin-right: auto;
    }
- }
+}
+
+/* -------------------------- */
