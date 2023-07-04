@@ -116,8 +116,6 @@ body {
 }
 
 .button {
-   position: relative;
-   z-index: 2;
    text-transform: uppercase;
    font-size: 12px;
    line-height: 1.2;
@@ -128,15 +126,9 @@ body {
    background-color: #8824cd;
    transition: background-color 0.3s ease 0s;
  }
- 
-
-.btn_text {
-   line-height: 60px; 
-   color: #fff;
-}
 
 .button:hover {
-   background-color: #4285F4;
+   background-color: #6b1068;
 }
 
 @media (max-width: 710px) {
@@ -191,11 +183,13 @@ body {
 .information-about-content {
    display: flex;
    margin-bottom: 50px;
+   line-height: 1.2;
 }
 
 .information-about-title {
    font-size: 15px;
    margin-bottom: 30px;
+   
 }
 
 
@@ -271,7 +265,7 @@ body {
 }
 
 /* -------------------------- */
-/* BANG BANG */
+/* HEADING */
 
 .heading {
    display: flex;
@@ -282,11 +276,13 @@ body {
    color: #000;
    margin-left: 50px;
    flex: 0 1 70%;
-   max-width: 50%;
+   max-width: 45%;
 }
 
 .heading-title, p {
    margin-bottom: 15px;
+   letter-spacing: 0.4px;
+   line-height: 1.2;
 }
 
 .heading__photo {
@@ -305,5 +301,44 @@ body {
 @media (max-width: 800px) {
    .heading-text p {
       font-size: 8px;
+   }
+}
+
+/* -------------------------- */
+/* EXPIRIENCE */
+
+.experience-content {
+   height: 500px;
+   padding-top: 100px;
+   background: url('../NewRex/images/experience.jpg') no-repeat center center/cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+ 
+.experience-content__text {
+   text-align: center;
+}
+ 
+.experience-content__title {
+   font-size: 30px;
+   margin-bottom: 20px;
+}
+ 
+.experience-content__subtitle {
+   width: 60%;
+   font-size: 18px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.experience-button {
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+@media (max-width: 450px) {
+   .experience-content__subtitle {
+      font-size: 10px;
    }
 }
